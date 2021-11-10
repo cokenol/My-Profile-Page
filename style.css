@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@700&display=swap');
+/* CSS HEX */
+:root{
+--royal-blue-dark: #00296bff;
+--dark-cornflower-blue: #003f88ff;
+--usafa-blue: #00509dff;
+--mikado-yellow: #fdc500ff;
+--cyber-yellow: #ffd500ff;
+}
 body {
-  background-color:whitesmoke;
+  background-color: white;
   font-family: "Open san", sans-serif;
-  color:blue;
-  font-weight: 400;
+  color: var(--mikado-yellow);
+  font-weight: normal;
   text-align: center;
 }
 
@@ -20,13 +28,14 @@ body {
 }
 h1 {
   font-family: "Raleway", sans-serif;
-  color: blueviolet;
-  background-color: bisque;
+  color: var(--cyber-yellow);
+  background-color: var(--royal-blue-dark);
+  padding: 10px;
 }
 
 p {
   font-family: "Open San", sans-serif;
-  line-height: 50px;
+  line-height: 30px;
 }
 ul{
   padding: 0;
@@ -42,18 +51,19 @@ ul{
   padding: 20px;
 }
 .btn-blue{
-  background-color: blue;
+  background-color: var(--dark-cornflower-blue);
   padding: 15px 20px;
   border-radius: 5px;
-  color: aliceblue;
+  color: lightcyan;
   text-decoration: none;
   display: inline-block;
   margin: 0 4px;
-  transition: 0.7s;
+  transition: 0.5s;
 }
 .btn-blue:hover{
   background-color: black;
-  color: aliceblue;
+  padding: 20px 30px;
+  color: var(--mikado-yellow);
 }
 
 .list-inline > li{
